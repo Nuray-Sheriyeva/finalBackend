@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+const cors = require("cors")
 const session = require('express-session')
 const path = require ("path")
 const dotenv = require('dotenv')
@@ -24,6 +25,10 @@ app.use((err, req, res, next) => {
   console.error(err)
   res.status(500).json('Internal server error')
 })
+app.use(cors({
+  origin: "https://nuray-sheriyeva.github.io",
+  credentials: true
+}));
 
 
 app.use(session({
@@ -39,4 +44,5 @@ app.use("/", router)
 app.listen(port, () => {
 
     console.log("Server live at", port)})
+
 
