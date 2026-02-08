@@ -9,7 +9,7 @@ const router = require('./routes/allRoutes')
 const bcrypt = require("bcryptjs")
 require('./routes/allRoutes')
 dotenv.config()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 const secret = process.env.SESSION_SECRET
 
 connectDB()
@@ -35,4 +35,5 @@ app.use(session({
 app.use("/", router)
 
 app.listen(port, () => {
+
     console.log("Server live at", port)})
