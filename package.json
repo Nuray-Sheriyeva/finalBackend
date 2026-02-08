@@ -4,6 +4,7 @@
   "description": "",
   "main": "back.js",
   "scripts": {
+    "start": "node back.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon back.js"
   },
