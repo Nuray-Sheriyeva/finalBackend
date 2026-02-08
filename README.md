@@ -39,18 +39,18 @@ The website includes for main pages:
 
 ## API documentation
 public
-/api/auth/register GET -> for registering users
-/api/auth/login GET -> for logging in
-/logout -> for logging out
+'/api/auth/register' GET -> for registering users
+'/api/auth/login' GET -> for logging in
+'/logout' -> for logging out
 
 private
-/api/users/profile GET -> for getting logged in user profile
-/api/users/profile PUT -> for updating the profile of logged in user
-/api/resource GET -> for getting all foods in the menu
-/api/resource POST -> for creating new food
-/api/resource/:id GET -> for getting specific food based on given id
-/api/resource/:id PUT -> for updating specific food based on given id
-/api/resource/:id DELETE -> for deleting specific food based on given id
+'/api/users/profile' GET -> for getting logged in user profile
+'/api/users/profile' PUT -> for updating the profile of logged in user
+'/api/resource' GET -> for getting all foods in the menu
+'/api/resource' POST -> for creating new food
+'/api/resource/:id' GET -> for getting specific food based on given id
+'/api/resource/:id' PUT -> for updating specific food based on given id
+'/api/resource/:id' DELETE -> for deleting specific food based on given id
 
 Access Type	
 Public	Anyone can access (no token, using express-session)
