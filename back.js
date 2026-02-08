@@ -16,8 +16,10 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'))})
+app.get("/", (req, res) => {
+  res.json({ status: "API running" })
+})
+
 app.use((err, req, res, next) => {
   console.error(err)
   res.status(500).json('Internal server error')
@@ -37,3 +39,4 @@ app.use("/", router)
 app.listen(port, () => {
 
     console.log("Server live at", port)})
+
