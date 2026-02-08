@@ -44,13 +44,13 @@ public
 3. '/logout' -> for logging out
 
 private
-4. '/api/users/profile' GET -> for getting logged in user profile
-5. '/api/users/profile' PUT -> for updating the profile of logged in user
-6. '/api/resource' GET -> for getting all foods in the menu
-7. '/api/resource' POST -> for creating new food
-8. '/api/resource/:id' GET -> for getting specific food based on given id
-9. '/api/resource/:id' PUT -> for updating specific food based on given id
-10. '/api/resource/:id' DELETE -> for deleting specific food based on given id
+1. '/api/users/profile' GET -> for getting logged in user profile
+2. '/api/users/profile' PUT -> for updating the profile of logged in user
+3. '/api/resource' GET -> for getting all foods in the menu
+4. '/api/resource' POST -> for creating new food
+5. '/api/resource/:id' GET -> for getting specific food based on given id
+6. '/api/resource/:id' PUT -> for updating specific food based on given id
+7. '/api/resource/:id' DELETE -> for deleting specific food based on given id
 
 Access Type	
 1. Public	Anyone can access (no token, using express-session)
