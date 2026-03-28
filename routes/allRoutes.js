@@ -100,8 +100,9 @@ router.get('/type/:typename', async (req, res) => {
     res.json(foods)
   }
   catch (error) {
-    console.log(error)
-    return res.status(500).json("Error 500! GET food types problem")
+    console.error(err);
+    res.status(500).send(err.message);
+
   }
 })
 router.post('/reservation', async (req, res) => {
